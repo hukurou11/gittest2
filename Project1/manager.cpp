@@ -5,7 +5,6 @@
 #include "input.h"
 #include "input2.h"
 #include "scene.h"
-#include "title.h"
 
 //CScene* g_Scene;
 
@@ -17,7 +16,8 @@ void CManager::Init()
 	CRenderer::Init();
 	CInput::Init();
 
-	SetScene<CTitle>();
+	m_Scene = new CScene();
+	m_Scene->Init();
 
 }
 
