@@ -169,6 +169,7 @@
     <ClCompile Include="result.cpp" />
     <ClCompile Include="time.cpp" />
     <ClCompile Include="title.cpp" />
+    <ClCompile Include="UI.cpp" />
     <ClCompile Include="wall.cpp" />
     <ClCompile Include="wall2.cpp" />
   </ItemGroup>
@@ -196,6 +197,7 @@
     <ClInclude Include="scene.h" />
     <ClInclude Include="time.h" />
     <ClInclude Include="title.h" />
+    <ClInclude Include="UI.h" />
     <ClInclude Include="wall.h" />
     <ClInclude Include="wall2.h" />
   </ItemGroup>
