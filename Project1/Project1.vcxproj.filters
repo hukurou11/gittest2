@@ -160,7 +160,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="pixelShader.cso" />
-    <None Include="vertexShader.cso" />
+    <FxCompile Include="vertexShader.hlsl" />
+    <FxCompile Include="pixelShader.hlsl" />
   </ItemGroup>
 </Project>
