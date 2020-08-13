@@ -147,14 +147,59 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="block.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="explosion.cpp" />
+    <ClCompile Include="field.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="game_object.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="input2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="model.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="polygon.cpp" />
+    <ClCompile Include="renderer.cpp" />
     <ClCompile Include="result.cpp" />
+    <ClCompile Include="time.cpp" />
     <ClCompile Include="title.cpp" />
+    <ClCompile Include="wall.cpp" />
+    <ClCompile Include="wall2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="block.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="effect.h" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="explosion.h" />
+    <ClInclude Include="field.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="game_object.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="input2.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="manager.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="polygon.h" />
+    <ClInclude Include="renderer.h" />
     <ClInclude Include="result.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="time.h" />
     <ClInclude Include="title.h" />
+    <ClInclude Include="wall.h" />
+    <ClInclude Include="wall2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pixelShader.cso" />
+    <None Include="vertexShader.cso" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
