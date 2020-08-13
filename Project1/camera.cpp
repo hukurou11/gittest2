@@ -21,16 +21,17 @@ void CCamera::Update()
 {
 	CScene* scene = CManager::GetScene();
 	CPlayer* player = scene->GetGameObject<CPlayer>(1);
+	if (player) {
+		PlayerPos = player->GetPosision();
 
-	PlayerPos = player->GetPosision();
 
+		m_Target = PlayerPos;
+		m_Target.y = PlayerPos.y + 2;
 
-	m_Target = PlayerPos;
-	m_Target.y = PlayerPos.y + 2;
-
-//	m_Position.z = PlayerPos.z - 1;
-	m_Position.z = PlayerPos.z - 3;
-	m_Position.x = PlayerPos.x;
+		//	m_Position.z = PlayerPos.z - 1;
+		m_Position.z = PlayerPos.z - 3;
+		m_Position.x = PlayerPos.x;
+	}
 }
 
 void CCamera::Draw()
