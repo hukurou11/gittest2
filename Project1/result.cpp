@@ -4,10 +4,12 @@
 #include "scene.h"
 #include "title.h"
 #include "fade.h"
+#include "result_background.h"
 
 void CResult::Init()
 {
 	AddGameObject<CCamera>(0);
+	AddGameObject<CResult_UI>(2);
 }
 
 void CResult::Update()

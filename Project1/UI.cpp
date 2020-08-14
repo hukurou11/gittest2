@@ -7,6 +7,8 @@ void CUI::Init(const char* file, D3DXVECTOR2 Position, D3DXVECTOR2 Size, D3DXVEC
 {
 	m_UIPosition = Position;
 	m_UISize = Size;
+	m_UItexStartPosition = texstart;
+	m_UItexSize = texsize;
 
 	VERTEX_3D vertex[4];
 

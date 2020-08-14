@@ -150,6 +150,8 @@
     <ClCompile Include="block.cpp" />
     <ClCompile Include="bullet.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="custom.cpp" />
+    <ClCompile Include="custom_background.cpp" />
     <ClCompile Include="effect.cpp" />
     <ClCompile Include="enemy.cpp" />
     <ClCompile Include="explosion.cpp" />
@@ -167,8 +169,10 @@
     <ClCompile Include="polygon.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="result.cpp" />
+    <ClCompile Include="result_background.cpp" />
     <ClCompile Include="time.cpp" />
     <ClCompile Include="title.cpp" />
+    <ClCompile Include="title_background.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="wall.cpp" />
     <ClCompile Include="wall2.cpp" />
@@ -177,6 +181,8 @@
     <ClInclude Include="block.h" />
     <ClInclude Include="bullet.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="custom.h" />
+    <ClInclude Include="custom_background.h" />
     <ClInclude Include="effect.h" />
     <ClInclude Include="enemy.h" />
     <ClInclude Include="explosion.h" />
@@ -194,9 +200,11 @@
     <ClInclude Include="polygon.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="result.h" />
+    <ClInclude Include="result_background.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="time.h" />
     <ClInclude Include="title.h" />
+    <ClInclude Include="title_background.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="wall.h" />
     <ClInclude Include="wall2.h" />

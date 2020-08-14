@@ -20,7 +20,7 @@ void CManager::Init()
 
 	CFade::Init();
 
-	CFade::SetFade<CTitle>();
+	CManager::SetScene<CTitle>();
 }
 
 void CManager::Uninit()
