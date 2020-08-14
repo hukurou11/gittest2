@@ -2,7 +2,7 @@
 
 #include "scene.h"
 
-class CResult : public CScene
+class CCustom : public CScene
 {
 
 public:
