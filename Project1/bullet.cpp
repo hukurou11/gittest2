@@ -99,7 +99,7 @@ void CBullet::Draw()
 void CBullet::Load()
 {
 	m_Model = new CModel();
-	m_Model->Load("asset\\model\\torus.obj");
+	m_Model->Load("asset\\model\\cube.obj");
 	assert(m_Model);
 }
 
