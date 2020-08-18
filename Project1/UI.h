@@ -9,6 +9,7 @@ protected:
 	D3DXVECTOR2 m_UISize;
 	D3DXVECTOR2 m_UItexStartPosition;
 	D3DXVECTOR2 m_UItexSize;
+	D3DXCOLOR m_UIColor;
 	bool m_Mapflg = false;		// trueの場合Mapする
 
 	ID3D11Buffer*				m_VertexBuffer = NULL;
@@ -19,7 +20,7 @@ public:
 	virtual ~CUI() {}
 
 	// 子クラスInit()オーバーライド関数先頭でCUI::Init()呼び出し
-	virtual void Init(const char* file, D3DXVECTOR2 Position = D3DXVECTOR2(0.0f, 0.0f), D3DXVECTOR2 Size = D3DXVECTOR2(0.0f, 0.0f), D3DXVECTOR2 texstart = D3DXVECTOR2(0.0f, 0.0f), D3DXVECTOR2 texsize = D3DXVECTOR2(0.0f, 0.0f));
+	virtual void Init(const char* file, D3DXVECTOR2 Position = D3DXVECTOR2(0.0f, 0.0f), D3DXVECTOR2 Size = D3DXVECTOR2(0.0f, 0.0f), D3DXVECTOR2 texstart = D3DXVECTOR2(0.0f, 0.0f), D3DXVECTOR2 texsize = D3DXVECTOR2(1.0f, 1.0f), D3DXCOLOR color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
 
 	// 子クラスUninit()オーバーライド関数末尾でCUI::Unitit()呼び出し
 	virtual void Uninit();
@@ -31,11 +32,13 @@ public:
 	D3DXVECTOR2 GetSize() { return m_UISize; }
 	D3DXVECTOR2 GettexStartPosition() { return m_UItexStartPosition; }
 	D3DXVECTOR2 GettexSize() { return m_UItexSize; };
+	D3DXCOLOR GetColor() { return m_UIColor; }
 
-	void SetPosision(D3DXVECTOR2 Position) { m_UIPosition = Position; }
-	void SetSize(D3DXVECTOR2 Size) { m_UISize = Size; }
+	void SetUIPosition(D3DXVECTOR2 Position) { m_UIPosition = Position; }
+	void SetUISize(D3DXVECTOR2 Size) { m_UISize = Size; }
 	void SettexStartPosision(D3DXVECTOR2 Position) { m_UItexStartPosition = Position; }
 	void SettexSize(D3DXVECTOR2 Size) { m_UItexSize = Size; }
+	void SetColor(D3DXCOLOR color) { m_UIColor = color; }
 
 	void SetMapflg(bool flg) { m_Mapflg = flg; }
 };
