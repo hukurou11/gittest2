@@ -3,33 +3,34 @@
 #include "game_object.h"
 #include "UI.h"
 
-void CUI::Init(const char* file, D3DXVECTOR2 Position, D3DXVECTOR2 Size, D3DXVECTOR2 texstart, D3DXVECTOR2 texsize)
+void CUI::Init(const char* file, D3DXVECTOR2 Position, D3DXVECTOR2 Size, D3DXVECTOR2 texstart, D3DXVECTOR2 texsize, D3DXCOLOR color)
 {
 	m_UIPosition = Position;
 	m_UISize = Size;
 	m_UItexStartPosition = texstart;
 	m_UItexSize = texsize;
+	m_UIColor = color;
 
 	VERTEX_3D vertex[4];
 
 	vertex[0].Position = D3DXVECTOR3(m_UIPosition.x - m_UISize.x * 0.5f, m_UIPosition.y - m_UISize.y * 0.5f, 0.0f);
 	vertex[0].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	vertex[0].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+	vertex[0].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 	vertex[0].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x, m_UItexStartPosition.y);
 
 	vertex[1].Position = D3DXVECTOR3(m_UIPosition.x + m_UISize.x * 0.5f, m_UIPosition.y - m_UISize.y * 0.5f, 0.0f);
 	vertex[1].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	vertex[1].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+	vertex[1].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 	vertex[1].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x + m_UItexSize.x, m_UItexStartPosition.y);
 
 	vertex[2].Position = D3DXVECTOR3(m_UIPosition.x - m_UISize.x * 0.5f, m_UIPosition.y + m_UISize.y * 0.5f, 0.0f);
 	vertex[2].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	vertex[2].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+	vertex[2].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 	vertex[2].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x, m_UItexStartPosition.y + m_UItexSize.y);
 
 	vertex[3].Position = D3DXVECTOR3(m_UIPosition.x + m_UISize.x * 0.5f, m_UIPosition.y + m_UISize.y * 0.5f, 0.0f);
 	vertex[3].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	vertex[3].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+	vertex[3].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 	vertex[3].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x + m_UItexSize.x, m_UItexStartPosition.y + m_UItexSize.y);
 
 
@@ -79,22 +80,22 @@ void CUI::Draw()
 
 		vertex[0].Position = D3DXVECTOR3(m_UIPosition.x - m_UISize.x * 0.5f, m_UIPosition.y - m_UISize.y * 0.5f, 0.0f);
 		vertex[0].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		vertex[0].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+		vertex[0].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 		vertex[0].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x, m_UItexStartPosition.y);
 
 		vertex[1].Position = D3DXVECTOR3(m_UIPosition.x + m_UISize.x * 0.5f, m_UIPosition.y - m_UISize.y * 0.5f, 0.0f);
 		vertex[1].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		vertex[1].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+		vertex[1].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 		vertex[1].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x + m_UItexSize.x, m_UItexStartPosition.y);
 
 		vertex[2].Position = D3DXVECTOR3(m_UIPosition.x - m_UISize.x * 0.5f, m_UIPosition.y + m_UISize.y * 0.5f, 0.0f);
 		vertex[2].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		vertex[2].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+		vertex[2].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 		vertex[2].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x, m_UItexStartPosition.y + m_UItexSize.y);
 
 		vertex[3].Position = D3DXVECTOR3(m_UIPosition.x + m_UISize.x * 0.5f, m_UIPosition.y + m_UISize.y * 0.5f, 0.0f);
 		vertex[3].Normal = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		vertex[3].Diffuse = D3DXVECTOR4(1.0f, 1.0f, 1.0f, 1.0f);
+		vertex[3].Diffuse = D3DXVECTOR4(m_UIColor.r, m_UIColor.g, m_UIColor.b, m_UIColor.a);
 		vertex[3].TexCoord = D3DXVECTOR2(m_UItexStartPosition.x + m_UItexSize.x, m_UItexStartPosition.y + m_UItexSize.y);
 
 		CRenderer::GetDeviceContext()->Unmap(m_VertexBuffer, 0);
