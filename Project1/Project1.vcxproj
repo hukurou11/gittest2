@@ -156,6 +156,7 @@
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="custom.cpp" />
     <ClCompile Include="custom_background.cpp" />
+    <ClCompile Include="custom_UI.cpp" />
     <ClCompile Include="effect.cpp" />
     <ClCompile Include="enemy.cpp" />
     <ClCompile Include="explosion.cpp" />
