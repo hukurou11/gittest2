@@ -188,6 +188,7 @@
     <ClInclude Include="camera.h" />
     <ClInclude Include="custom.h" />
     <ClInclude Include="custom_background.h" />
+    <ClInclude Include="custom_UI.h" />
     <ClInclude Include="effect.h" />
     <ClInclude Include="enemy.h" />
     <ClInclude Include="explosion.h" />
