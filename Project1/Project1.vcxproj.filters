@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{668ff1b7-4659-4b76-94cd-dd9bfd06f7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game\KY">
+      <UniqueIdentifier>{649dcd3b-513b-4f56-9191-d145dcf5236c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{d37a4b14-3257-4c9d-b092-521d19fb3801}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -24,25 +33,7 @@
     <ClCompile Include="result.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="block.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="bullet.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="camera.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="effect.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="enemy.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="explosion.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="field.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="game_object.cpp">
@@ -66,22 +57,7 @@
     <ClCompile Include="model.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="player.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="polygon.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="renderer.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="time.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="wall.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="wall2.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="fade.cpp">
@@ -108,6 +84,39 @@
     <ClCompile Include="sound.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="block.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="effect.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="explosion.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="field.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="polygon.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="wall.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
+    <ClCompile Include="wall2.cpp">
+      <Filter>game\KY</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
@@ -119,34 +128,10 @@
     <ClInclude Include="result.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="block.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="bullet.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="camera.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="effect.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="enemy.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="explosion.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="field.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="game_object.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="input.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="input2.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
@@ -155,13 +140,7 @@
     <ClInclude Include="manager.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="map.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="model.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="player.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="polygon.h">
@@ -174,12 +153,6 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="time.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="wall.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="wall2.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="fade.h">
@@ -205,6 +178,42 @@
     </ClInclude>
     <ClInclude Include="sound.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="block.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="effect.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="explosion.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="field.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="input2.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="wall.h">
+      <Filter>game\KY</Filter>
+    </ClInclude>
+    <ClInclude Include="wall2.h">
+      <Filter>game\KY</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
