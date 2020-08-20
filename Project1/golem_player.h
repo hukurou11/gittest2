@@ -2,7 +2,7 @@
 
 #include "game_object.h"
 
-class CPlayer :public CGameObject//継承(インヘリタンス)
+class CGolem :public CGameObject//継承(インヘリタンス)
 {
 private:
 
@@ -23,8 +23,8 @@ private:
 	class CModel* m_LEFTLEG;		//左足パーツ
 	class CModel* m_RIGHTLEG;		//右足パーツ
 public:
-	CPlayer() {}
-	~CPlayer() {}
+	CGolem() {}
+	~CGolem() {}
 	void Init();
 	void Uninit();
 	void Update();

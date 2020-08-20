@@ -208,7 +208,7 @@ CL_KNEE left_knee;			//左膝パーツインスタンス
 CR_Leg right_leg;			//右足パーツインスタンス
 CL_Leg left_leg;			//左足パーツインスタンス
 
-void CPlayer::Init()
+void CGolem::Init()
 {
 	//モデル読み込み準備
 	m_HEAD = new CModel();			//頭パーツ
@@ -301,7 +301,7 @@ void CPlayer::Init()
 
 }
 
-void CPlayer::Uninit()
+void CGolem::Uninit()
 {
 	m_HEAD->Unload();
 	m_BODY->Unload();
@@ -335,7 +335,7 @@ void CPlayer::Uninit()
 }
 
 
-void CPlayer::Update()
+void CGolem::Update()
 {
 	//パンチ入力時行動制限
 	if (!punch)
@@ -537,7 +537,7 @@ void CPlayer::Update()
 	g_BODYandLLEG = left_leg.LeftLegMatrix*body.BodyMatrix;								//左足と体の計算
 }
 
-void CPlayer::Draw()
+void CGolem::Draw()
 {
 	CRenderer::SetWorldMatrix(&body.BodyMatrix);			//体
 	m_BODY->Draw();
