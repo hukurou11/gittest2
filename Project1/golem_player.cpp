@@ -2,9 +2,9 @@
 #include "manager.h"
 #include "renderer.h"
 #include "model.h"
-#include "player.h"
+#include "golem_player.h"
 #include "input.h"
-#include "Bullet.h"
+#include "input2.h"
 #include "scene.h"
 
 /////////////////////////////////
@@ -358,29 +358,29 @@ void CPlayer::Update()
 			Move_Left();
 		}
 		//行動コマンド離したときに歩行アクションリセット
-		if (CInput::GetKeyUp(VK_UP))
+		if (CInput::GetKeyRelease(VK_UP))
 		{
 			left_leg.Rotetion = Vector3(0.0f, 0.0f, -3.2f);			//左足
 			right_leg.Rotetion = Vector3(0.0f, 0.0f, 3.2f);			//右足
 		}
-		if (CInput::GetKeyUp(VK_DOWN))
+		if (CInput::GetKeyRelease(VK_DOWN))
 		{
 			left_leg.Rotetion = Vector3(0.0f, 0.0f, -3.2f);			//左足
 			right_leg.Rotetion = Vector3(0.0f, 0.0f, 3.2f);			//右足
 		}
-		if (CInput::GetKeyUp(VK_RIGHT))
+		if (CInput::GetKeyRelease(VK_RIGHT))
 		{
 			left_leg.Rotetion = Vector3(0.0f, 0.0f, -3.2f);			//左足
 			right_leg.Rotetion = Vector3(0.0f, 0.0f, 3.2f);			//右足
 		}
-		if (CInput::GetKeyUp(VK_LEFT))
+		if (CInput::GetKeyRelease(VK_LEFT))
 		{
 			left_leg.Rotetion = Vector3(0.0f, 0.0f, -3.2f);			//左足
 			right_leg.Rotetion = Vector3(0.0f, 0.0f, 3.2f);			//右足
 		}
 	}
 	//攻撃コマンド入力
-	if (CInput::GetKeyDown(VK_SPACE))
+	if (CInput::GetKeyTrigger(VK_SPACE))
 	{
 		left_leg.Rotetion = Vector3(0.0f, 0.0f, -3.2f);			//左足
 		right_leg.Rotetion = Vector3(0.0f, 0.0f, 3.2f);			//右足

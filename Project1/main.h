@@ -27,5 +27,5 @@
 #define SCREEN_WIDTH	(960)			// ウインドウの幅
 #define SCREEN_HEIGHT	(540)			// ウインドウの高さ
 
-
+typedef D3DXVECTOR3 Vector3;
 HWND GetWindow();
