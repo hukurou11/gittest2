@@ -164,6 +164,7 @@
     <ClCompile Include="field.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_object.cpp" />
+    <ClCompile Include="golem_player.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="input2.cpp" />
     <ClCompile Include="main.cpp" />
@@ -197,6 +198,7 @@
     <ClInclude Include="field.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="game_object.h" />
+    <ClInclude Include="golem_player.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="input2.h" />
     <ClInclude Include="main.h" />
